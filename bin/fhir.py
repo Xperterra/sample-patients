@@ -169,7 +169,9 @@ class FHIRSamplePatient(object):
                 "scale": "Qn",
                 "value": bp['systolic'],
                 "units": "mm[Hg]",
-                "unitsCode": "mm[Hg]"
+                "unitsCode": "mm[Hg]",
+                "categoryCode": "vital-signs",
+                "categoryDisplay": "Vital Signs"
         }
         template = template_env.get_template('observation.xml')
         print >>pfile, template.render(dict(globals(), **locals()))
@@ -182,7 +184,9 @@ class FHIRSamplePatient(object):
                 "scale": "Qn",
                 "value": bp['diastolic'],
                 "units": "mm[Hg]",
-                "unitsCode": "mm[Hg]"
+                "unitsCode": "mm[Hg]",
+                "categoryCode": "vital-signs",
+                "categoryDisplay": "Vital Signs"
         }
         template = template_env.get_template('observation.xml')
         print >>pfile, template.render(dict(globals(), **locals()))
@@ -192,11 +196,15 @@ class FHIRSamplePatient(object):
         id = uid("Observation", '-'.join((o["id"], o["name"].lower().replace(' ', '').replace('_', ''))))
         if "units" in o.keys():
            o["unitsCode"] = o["units"]
+           o["categoryCode"] = "vital-signs"
+           o["categoryDisplay"] = "Vital Signs"
         print >>pfile, template.render(dict(globals(), **locals()))
 
     if self.pid in Lab.results:
       for o in Lab.results[self.pid]:
         id = uid("Observation", "%s-lab" % o.id)
+        o.categoryCode = "laboratory"
+        o.categoryDisplay = "Laboratory"
         print >>pfile, template.render(dict(globals(), **locals()))
 
     medtemplate = template_env.get_template('medication.xml')
@@ -252,7 +260,9 @@ class FHIRSamplePatient(object):
             "scale": "Qn",
             "value": p.gestage,
             "units": "weeks",
-            "unitsCode": "wk"
+            "unitsCode": "wk",
+            "categoryCode": "exam",
+            "categoryDisplay": "Exam"
         }
         id = uid("Observation", "%s-gestage" % self.pid)
         print >>pfile, template.render(dict(globals(), **locals()))
@@ -311,7 +321,9 @@ class FHIRSamplePatient(object):
                         "date": al.start,
                         "system": "http://snomed.info/sct",
                         "code": al.code,
-                        "name": al.allergen
+                        "name": al.allergen,
+                        "categoryCode": "exam",
+                        "categoryDisplay": "Exam"
                     }
                     id = uid("Observation", "%s-allergy" % al.id)
                     print >>pfile, template.render(dict(globals(), **locals()))

@@ -1,0 +1,1206 @@
+{
+  "resourceType": "Bundle", 
+  "entry": [
+    {
+      "request": {
+        "url": "DiagnosticReport/argonaut-lab-report-1", 
+        "method": "PUT"
+      }, 
+      "resource": {
+        "status": "final", 
+        "category": {
+          "coding": [
+            {
+              "code": "CH", 
+              "system": "http://hl7.org/fhir/v2/0074", 
+              "display": "Chemistry"
+            }
+          ]
+        }, 
+        "code": {
+          "coding": [
+            {
+              "code": "24323-8", 
+              "system": "http://loinc.org", 
+              "display": "Comprehensive metabolic 2000 panel - Serum or Plasma"
+            }
+          ]
+        }, 
+        "result": [
+          {
+            "reference": "Observation/argonaut-lab-1"
+          }, 
+          {
+            "reference": "Observation/argonaut-lab-2"
+          }, 
+          {
+            "reference": "Observation/argonaut-lab-3"
+          }, 
+          {
+            "reference": "Observation/argonaut-lab-4"
+          }, 
+          {
+            "reference": "Observation/argonaut-lab-5"
+          }, 
+          {
+            "reference": "Observation/argonaut-lab-6"
+          }, 
+          {
+            "reference": "Observation/argonaut-lab-7"
+          }, 
+          {
+            "reference": "Observation/argonaut-lab-8"
+          }, 
+          {
+            "reference": "Observation/argonaut-lab-9"
+          }, 
+          {
+            "reference": "Observation/argonaut-lab-10"
+          }, 
+          {
+            "reference": "Observation/argonaut-lab-11"
+          }, 
+          {
+            "reference": "Observation/argonaut-lab-12"
+          }, 
+          {
+            "reference": "Observation/argonaut-lab-13"
+          }, 
+          {
+            "reference": "Observation/argonaut-lab-14"
+          }
+        ], 
+        "issued": "2005-07-06T11:45:33+11:00", 
+        "resourceType": "DiagnosticReport", 
+        "effectiveDateTime": "2005-07-04", 
+        "id": "argonaut-lab-report-1", 
+        "subject": {
+          "reference": "Patient/1032702"
+        }
+      }
+    }, 
+    {
+      "request": {
+        "url": "DiagnosticReport/argonaut-lab-report-2", 
+        "method": "PUT"
+      }, 
+      "resource": {
+        "status": "final", 
+        "category": {
+          "effectiveDateTime": "2005-07-04", 
+          "issued": "2005-07-06T11:45:33+11:00", 
+          "coding": [
+            {
+              "code": "HM", 
+              "system": "http://hl7.org/fhir/v2/0074", 
+              "display": "Hematology"
+            }
+          ], 
+          "subject": {
+            "reference": "Patient/1032702"
+          }
+        }, 
+        "code": {
+          "coding": [
+            {
+              "code": "58410-2", 
+              "system": "http://loinc.org", 
+              "display": "Complete blood count (hemogram) panel - Blood by Automated count"
+            }
+          ]
+        }, 
+        "resourceType": "DiagnosticReport", 
+        "result": [
+          {
+            "reference": "Observation/argonaut-lab-15"
+          }, 
+          {
+            "reference": "Observation/argonaut-lab-16"
+          }, 
+          {
+            "reference": "Observation/argonaut-lab-17"
+          }, 
+          {
+            "reference": "Observation/argonaut-lab-18"
+          }, 
+          {
+            "reference": "Observation/argonaut-lab-19"
+          }, 
+          {
+            "reference": "Observation/argonaut-lab-20"
+          }, 
+          {
+            "reference": "Observation/argonaut-lab-21"
+          }, 
+          {
+            "reference": "Observation/argonaut-lab-22"
+          }, 
+          {
+            "reference": "Observation/argonaut-lab-23"
+          }, 
+          {
+            "reference": "Observation/argonaut-lab-24"
+          }
+        ], 
+        "id": "argonaut-lab-report-2"
+      }
+    }, 
+    {
+      "request": {
+        "url": "Observation/argonaut-lab-1", 
+        "method": "PUT"
+      }, 
+      "resource": {
+        "status": "final", 
+        "category": {
+          "text": "Laboratory", 
+          "coding": [
+            {
+              "code": "laboratory", 
+              "system": "http://hl7.org/fhir/observation-category", 
+              "display": "Laboratory"
+            }
+          ]
+        }, 
+        "code": {
+          "text": "Sodium", 
+          "coding": [
+            {
+              "code": "2951-2", 
+              "system": "http://loinc.org", 
+              "display": "Sodium"
+            }
+          ]
+        }, 
+        "effectiveDateTime": "2005-07-04", 
+        "resourceType": "Observation", 
+        "text": {
+          "status": "generated", 
+          "div": "<div>See structured data</div>"
+        }, 
+        "valueQuantity": {
+          "unit": "mmol/L", 
+          "value": 138, 
+          "system": "http://unitsofmeasure.org"
+        }, 
+        "id": "argonaut-lab-1", 
+        "subject": {
+          "reference": "Patient/1032702"
+        }
+      }
+    }, 
+    {
+      "request": {
+        "url": "Observation/argonaut-lab-2", 
+        "method": "PUT"
+      }, 
+      "resource": {
+        "status": "final", 
+        "category": {
+          "text": "Laboratory", 
+          "coding": [
+            {
+              "code": "laboratory", 
+              "system": "http://hl7.org/fhir/observation-category", 
+              "display": "Laboratory"
+            }
+          ]
+        }, 
+        "code": {
+          "text": "Potassium", 
+          "coding": [
+            {
+              "code": "2823-3", 
+              "system": "http://loinc.org", 
+              "display": "Potassium"
+            }
+          ]
+        }, 
+        "effectiveDateTime": "2005-07-04", 
+        "resourceType": "Observation", 
+        "text": {
+          "status": "generated", 
+          "div": "<div>See structured data</div>"
+        }, 
+        "valueQuantity": {
+          "unit": "mmol/L", 
+          "value": 3.5, 
+          "system": "http://unitsofmeasure.org"
+        }, 
+        "id": "argonaut-lab-2", 
+        "subject": {
+          "reference": "Patient/1032702"
+        }
+      }
+    }, 
+    {
+      "request": {
+        "url": "Observation/argonaut-lab-3", 
+        "method": "PUT"
+      }, 
+      "resource": {
+        "status": "final", 
+        "category": {
+          "text": "Laboratory", 
+          "coding": [
+            {
+              "code": "laboratory", 
+              "system": "http://hl7.org/fhir/observation-category", 
+              "display": "Laboratory"
+            }
+          ]
+        }, 
+        "code": {
+          "text": "Chloride", 
+          "coding": [
+            {
+              "code": "2075-0", 
+              "system": "http://loinc.org", 
+              "display": "Chloride"
+            }
+          ]
+        }, 
+        "effectiveDateTime": "2005-07-04", 
+        "resourceType": "Observation", 
+        "text": {
+          "status": "generated", 
+          "div": "<div>See structured data</div>"
+        }, 
+        "valueQuantity": {
+          "unit": "mmol/L", 
+          "value": 102, 
+          "system": "http://unitsofmeasure.org"
+        }, 
+        "id": "argonaut-lab-3", 
+        "subject": {
+          "reference": "Patient/1032702"
+        }
+      }
+    }, 
+    {
+      "request": {
+        "url": "Observation/argonaut-lab-4", 
+        "method": "PUT"
+      }, 
+      "resource": {
+        "status": "final", 
+        "category": {
+          "text": "Laboratory", 
+          "coding": [
+            {
+              "code": "laboratory", 
+              "system": "http://hl7.org/fhir/observation-category", 
+              "display": "Laboratory"
+            }
+          ]
+        }, 
+        "code": {
+          "text": "Carbon dioxide, total", 
+          "coding": [
+            {
+              "code": "2028-9", 
+              "system": "http://loinc.org", 
+              "display": "Carbon dioxide, total"
+            }
+          ]
+        }, 
+        "effectiveDateTime": "2005-07-04", 
+        "resourceType": "Observation", 
+        "text": {
+          "status": "generated", 
+          "div": "<div>See structured data</div>"
+        }, 
+        "valueQuantity": {
+          "unit": "mmol/L", 
+          "value": 25, 
+          "system": "http://unitsofmeasure.org"
+        }, 
+        "id": "argonaut-lab-4", 
+        "subject": {
+          "reference": "Patient/1032702"
+        }
+      }
+    }, 
+    {
+      "request": {
+        "url": "Observation/argonaut-lab-5", 
+        "method": "PUT"
+      }, 
+      "resource": {
+        "status": "final", 
+        "category": {
+          "text": "Laboratory", 
+          "coding": [
+            {
+              "code": "laboratory", 
+              "system": "http://hl7.org/fhir/observation-category", 
+              "display": "Laboratory"
+            }
+          ]
+        }, 
+        "code": {
+          "text": "Blood urea nitrogen", 
+          "coding": [
+            {
+              "code": "3094-0", 
+              "system": "http://loinc.org", 
+              "display": "Blood urea nitrogen"
+            }
+          ]
+        }, 
+        "effectiveDateTime": "2005-07-04", 
+        "resourceType": "Observation", 
+        "text": {
+          "status": "generated", 
+          "div": "<div>See structured data</div>"
+        }, 
+        "valueQuantity": {
+          "unit": "mg/dL", 
+          "value": 9, 
+          "system": "http://unitsofmeasure.org"
+        }, 
+        "id": "argonaut-lab-5", 
+        "subject": {
+          "reference": "Patient/1032702"
+        }
+      }
+    }, 
+    {
+      "request": {
+        "url": "Observation/argonaut-lab-6", 
+        "method": "PUT"
+      }, 
+      "resource": {
+        "status": "final", 
+        "category": {
+          "text": "Laboratory", 
+          "coding": [
+            {
+              "code": "laboratory", 
+              "system": "http://hl7.org/fhir/observation-category", 
+              "display": "Laboratory"
+            }
+          ]
+        }, 
+        "code": {
+          "text": "Creatinine", 
+          "coding": [
+            {
+              "code": "2160-0", 
+              "system": "http://loinc.org", 
+              "display": "Creatinine"
+            }
+          ]
+        }, 
+        "effectiveDateTime": "2005-07-04", 
+        "resourceType": "Observation", 
+        "text": {
+          "status": "generated", 
+          "div": "<div>See structured data</div>"
+        }, 
+        "valueQuantity": {
+          "unit": "mg/dL", 
+          "value": 1.1, 
+          "system": "http://unitsofmeasure.org"
+        }, 
+        "id": "argonaut-lab-6", 
+        "subject": {
+          "reference": "Patient/1032702"
+        }
+      }
+    }, 
+    {
+      "request": {
+        "url": "Observation/argonaut-lab-7", 
+        "method": "PUT"
+      }, 
+      "resource": {
+        "status": "final", 
+        "category": {
+          "text": "Laboratory", 
+          "coding": [
+            {
+              "code": "laboratory", 
+              "system": "http://hl7.org/fhir/observation-category", 
+              "display": "Laboratory"
+            }
+          ]
+        }, 
+        "code": {
+          "text": "Glucose", 
+          "coding": [
+            {
+              "code": "2345-7", 
+              "system": "http://loinc.org", 
+              "display": "Glucose"
+            }
+          ]
+        }, 
+        "effectiveDateTime": "2005-07-04", 
+        "resourceType": "Observation", 
+        "text": {
+          "status": "generated", 
+          "div": "<div>See structured data</div>"
+        }, 
+        "valueQuantity": {
+          "unit": "mg/dL", 
+          "value": 82, 
+          "system": "http://unitsofmeasure.org"
+        }, 
+        "id": "argonaut-lab-7", 
+        "subject": {
+          "reference": "Patient/1032702"
+        }
+      }
+    }, 
+    {
+      "request": {
+        "url": "Observation/argonaut-lab-8", 
+        "method": "PUT"
+      }, 
+      "resource": {
+        "status": "final", 
+        "category": {
+          "text": "Laboratory", 
+          "coding": [
+            {
+              "code": "laboratory", 
+              "system": "http://hl7.org/fhir/observation-category", 
+              "display": "Laboratory"
+            }
+          ]
+        }, 
+        "code": {
+          "text": "Calcium", 
+          "coding": [
+            {
+              "code": "17861-6", 
+              "system": "http://loinc.org", 
+              "display": "Calcium"
+            }
+          ]
+        }, 
+        "effectiveDateTime": "2005-07-04", 
+        "resourceType": "Observation", 
+        "text": {
+          "status": "generated", 
+          "div": "<div>See structured data</div>"
+        }, 
+        "valueQuantity": {
+          "unit": "mg/dL", 
+          "value": 9.5, 
+          "system": "http://unitsofmeasure.org"
+        }, 
+        "id": "argonaut-lab-8", 
+        "subject": {
+          "reference": "Patient/1032702"
+        }
+      }
+    }, 
+    {
+      "request": {
+        "url": "Observation/argonaut-lab-9", 
+        "method": "PUT"
+      }, 
+      "resource": {
+        "status": "final", 
+        "category": {
+          "text": "Laboratory", 
+          "coding": [
+            {
+              "code": "laboratory", 
+              "system": "http://hl7.org/fhir/observation-category", 
+              "display": "Laboratory"
+            }
+          ]
+        }, 
+        "code": {
+          "text": "Protein", 
+          "coding": [
+            {
+              "code": "2885-2", 
+              "system": "http://loinc.org", 
+              "display": "Protein"
+            }
+          ]
+        }, 
+        "effectiveDateTime": "2005-07-04", 
+        "resourceType": "Observation", 
+        "text": {
+          "status": "generated", 
+          "div": "<div>See structured data</div>"
+        }, 
+        "valueQuantity": {
+          "unit": "g/dL", 
+          "value": 7.2, 
+          "system": "http://unitsofmeasure.org"
+        }, 
+        "id": "argonaut-lab-9", 
+        "subject": {
+          "reference": "Patient/1032702"
+        }
+      }
+    }, 
+    {
+      "request": {
+        "url": "Observation/argonaut-lab-10", 
+        "method": "PUT"
+      }, 
+      "resource": {
+        "status": "final", 
+        "category": {
+          "text": "Laboratory", 
+          "coding": [
+            {
+              "code": "laboratory", 
+              "system": "http://hl7.org/fhir/observation-category", 
+              "display": "Laboratory"
+            }
+          ]
+        }, 
+        "code": {
+          "text": "Albumin", 
+          "coding": [
+            {
+              "code": "1751-7", 
+              "system": "http://loinc.org", 
+              "display": "Albumin"
+            }
+          ]
+        }, 
+        "effectiveDateTime": "2005-07-04", 
+        "resourceType": "Observation", 
+        "text": {
+          "status": "generated", 
+          "div": "<div>See structured data</div>"
+        }, 
+        "valueQuantity": {
+          "unit": "g/dL", 
+          "value": 4.2, 
+          "system": "http://unitsofmeasure.org"
+        }, 
+        "id": "argonaut-lab-10", 
+        "subject": {
+          "reference": "Patient/1032702"
+        }
+      }
+    }, 
+    {
+      "request": {
+        "url": "Observation/argonaut-lab-11", 
+        "method": "PUT"
+      }, 
+      "resource": {
+        "status": "final", 
+        "category": {
+          "text": "Laboratory", 
+          "coding": [
+            {
+              "code": "laboratory", 
+              "system": "http://hl7.org/fhir/observation-category", 
+              "display": "Laboratory"
+            }
+          ]
+        }, 
+        "code": {
+          "text": "Total Bilirubin", 
+          "coding": [
+            {
+              "code": "1975-2", 
+              "system": "http://loinc.org", 
+              "display": "Total Bilirubin"
+            }
+          ]
+        }, 
+        "effectiveDateTime": "2005-07-04", 
+        "resourceType": "Observation", 
+        "text": {
+          "status": "generated", 
+          "div": "<div>See structured data</div>"
+        }, 
+        "valueQuantity": {
+          "unit": "mg/dL", 
+          "value": 1.1, 
+          "system": "http://unitsofmeasure.org"
+        }, 
+        "id": "argonaut-lab-11", 
+        "subject": {
+          "reference": "Patient/1032702"
+        }
+      }
+    }, 
+    {
+      "request": {
+        "url": "Observation/argonaut-lab-12", 
+        "method": "PUT"
+      }, 
+      "resource": {
+        "status": "final", 
+        "category": {
+          "text": "Laboratory", 
+          "coding": [
+            {
+              "code": "laboratory", 
+              "system": "http://hl7.org/fhir/observation-category", 
+              "display": "Laboratory"
+            }
+          ]
+        }, 
+        "code": {
+          "text": "Alkaline phosphatase", 
+          "coding": [
+            {
+              "code": "6768-6", 
+              "system": "http://loinc.org", 
+              "display": "Alkaline phosphatase"
+            }
+          ]
+        }, 
+        "effectiveDateTime": "2005-07-04", 
+        "resourceType": "Observation", 
+        "text": {
+          "status": "generated", 
+          "div": "<div>See structured data</div>"
+        }, 
+        "valueQuantity": {
+          "unit": "U/L", 
+          "value": 72, 
+          "system": "http://unitsofmeasure.org"
+        }, 
+        "id": "argonaut-lab-12", 
+        "subject": {
+          "reference": "Patient/1032702"
+        }
+      }
+    }, 
+    {
+      "request": {
+        "url": "Observation/argonaut-lab-13", 
+        "method": "PUT"
+      }, 
+      "resource": {
+        "status": "final", 
+        "category": {
+          "text": "Laboratory", 
+          "coding": [
+            {
+              "code": "laboratory", 
+              "system": "http://hl7.org/fhir/observation-category", 
+              "display": "Laboratory"
+            }
+          ]
+        }, 
+        "code": {
+          "text": "Alanine aminotransferase", 
+          "coding": [
+            {
+              "code": "1742-6", 
+              "system": "http://loinc.org", 
+              "display": "Alanine aminotransferase"
+            }
+          ]
+        }, 
+        "effectiveDateTime": "2005-07-04", 
+        "resourceType": "Observation", 
+        "text": {
+          "status": "generated", 
+          "div": "<div>See structured data</div>"
+        }, 
+        "valueQuantity": {
+          "unit": "mmol/L", 
+          "value": 18, 
+          "system": "http://unitsofmeasure.org"
+        }, 
+        "id": "argonaut-lab-13", 
+        "subject": {
+          "reference": "Patient/1032702"
+        }
+      }
+    }, 
+    {
+      "request": {
+        "url": "Observation/argonaut-lab-14", 
+        "method": "PUT"
+      }, 
+      "resource": {
+        "status": "final", 
+        "category": {
+          "text": "Laboratory", 
+          "coding": [
+            {
+              "code": "laboratory", 
+              "system": "http://hl7.org/fhir/observation-category", 
+              "display": "Laboratory"
+            }
+          ]
+        }, 
+        "code": {
+          "text": "Aspartate aminotransferase", 
+          "coding": [
+            {
+              "code": "1920-8", 
+              "system": "http://loinc.org", 
+              "display": "Aspartate aminotransferase"
+            }
+          ]
+        }, 
+        "effectiveDateTime": "2005-07-04", 
+        "resourceType": "Observation", 
+        "text": {
+          "status": "generated", 
+          "div": "<div>See structured data</div>"
+        }, 
+        "valueQuantity": {
+          "unit": "mmol/L", 
+          "value": 12, 
+          "system": "http://unitsofmeasure.org"
+        }, 
+        "id": "argonaut-lab-14", 
+        "subject": {
+          "reference": "Patient/1032702"
+        }
+      }
+    }, 
+    {
+      "request": {
+        "url": "Observation/argonaut-lab-15", 
+        "method": "PUT"
+      }, 
+      "resource": {
+        "status": "final", 
+        "category": {
+          "text": "Laboratory", 
+          "coding": [
+            {
+              "code": "laboratory", 
+              "system": "http://hl7.org/fhir/observation-category", 
+              "display": "Laboratory"
+            }
+          ]
+        }, 
+        "code": {
+          "text": "Leukocytes", 
+          "coding": [
+            {
+              "code": "6690-2", 
+              "system": "http://loinc.org", 
+              "display": "Leukocytes"
+            }
+          ]
+        }, 
+        "effectiveDateTime": "2005-07-04", 
+        "resourceType": "Observation", 
+        "text": {
+          "status": "generated", 
+          "div": "<div>See structured data</div>"
+        }, 
+        "valueQuantity": {
+          "unit": "10*3/uL", 
+          "value": 7.6, 
+          "system": "http://unitsofmeasure.org"
+        }, 
+        "id": "argonaut-lab-15", 
+        "subject": {
+          "reference": "Patient/1032702"
+        }
+      }
+    }, 
+    {
+      "request": {
+        "url": "Observation/argonaut-lab-16", 
+        "method": "PUT"
+      }, 
+      "resource": {
+        "status": "final", 
+        "category": {
+          "text": "Laboratory", 
+          "coding": [
+            {
+              "code": "laboratory", 
+              "system": "http://hl7.org/fhir/observation-category", 
+              "display": "Laboratory"
+            }
+          ]
+        }, 
+        "code": {
+          "text": "Erythrocytes", 
+          "coding": [
+            {
+              "code": "789-8", 
+              "system": "http://loinc.org", 
+              "display": "Erythrocytes"
+            }
+          ]
+        }, 
+        "effectiveDateTime": "2005-07-04", 
+        "resourceType": "Observation", 
+        "text": {
+          "status": "generated", 
+          "div": "<div>See structured data</div>"
+        }, 
+        "valueQuantity": {
+          "unit": "10*6/uL", 
+          "value": 5.2, 
+          "system": "http://unitsofmeasure.org"
+        }, 
+        "id": "argonaut-lab-16", 
+        "subject": {
+          "reference": "Patient/1032702"
+        }
+      }
+    }, 
+    {
+      "request": {
+        "url": "Observation/argonaut-lab-17", 
+        "method": "PUT"
+      }, 
+      "resource": {
+        "status": "final", 
+        "category": {
+          "text": "Laboratory", 
+          "coding": [
+            {
+              "code": "laboratory", 
+              "system": "http://hl7.org/fhir/observation-category", 
+              "display": "Laboratory"
+            }
+          ]
+        }, 
+        "code": {
+          "text": "Hemoglobin", 
+          "coding": [
+            {
+              "code": "718-7", 
+              "system": "http://loinc.org", 
+              "display": "Hemoglobin"
+            }
+          ]
+        }, 
+        "effectiveDateTime": "2005-07-04", 
+        "resourceType": "Observation", 
+        "text": {
+          "status": "generated", 
+          "div": "<div>See structured data</div>"
+        }, 
+        "valueQuantity": {
+          "unit": "g/dL", 
+          "value": 17.2, 
+          "system": "http://unitsofmeasure.org"
+        }, 
+        "id": "argonaut-lab-17", 
+        "subject": {
+          "reference": "Patient/1032702"
+        }
+      }
+    }, 
+    {
+      "request": {
+        "url": "Observation/argonaut-lab-18", 
+        "method": "PUT"
+      }, 
+      "resource": {
+        "status": "final", 
+        "category": {
+          "text": "Laboratory", 
+          "coding": [
+            {
+              "code": "laboratory", 
+              "system": "http://hl7.org/fhir/observation-category", 
+              "display": "Laboratory"
+            }
+          ]
+        }, 
+        "code": {
+          "text": "Hematocrit", 
+          "coding": [
+            {
+              "code": "4544-3", 
+              "system": "http://loinc.org", 
+              "display": "Hematocrit"
+            }
+          ]
+        }, 
+        "effectiveDateTime": "2005-07-04", 
+        "resourceType": "Observation", 
+        "text": {
+          "status": "generated", 
+          "div": "<div>See structured data</div>"
+        }, 
+        "valueQuantity": {
+          "unit": "%", 
+          "value": 49, 
+          "system": "http://unitsofmeasure.org"
+        }, 
+        "id": "argonaut-lab-18", 
+        "subject": {
+          "reference": "Patient/1032702"
+        }
+      }
+    }, 
+    {
+      "request": {
+        "url": "Observation/argonaut-lab-19", 
+        "method": "PUT"
+      }, 
+      "resource": {
+        "status": "final", 
+        "category": {
+          "text": "Laboratory", 
+          "coding": [
+            {
+              "code": "laboratory", 
+              "system": "http://hl7.org/fhir/observation-category", 
+              "display": "Laboratory"
+            }
+          ]
+        }, 
+        "code": {
+          "text": "Erythrocyte mean corpuscular volume", 
+          "coding": [
+            {
+              "code": "787-2", 
+              "system": "http://loinc.org", 
+              "display": "Erythrocyte mean corpuscular volume"
+            }
+          ]
+        }, 
+        "effectiveDateTime": "2005-07-04", 
+        "resourceType": "Observation", 
+        "text": {
+          "status": "generated", 
+          "div": "<div>See structured data</div>"
+        }, 
+        "valueQuantity": {
+          "unit": "fL", 
+          "value": 92, 
+          "system": "http://unitsofmeasure.org"
+        }, 
+        "id": "argonaut-lab-19", 
+        "subject": {
+          "reference": "Patient/1032702"
+        }
+      }
+    }, 
+    {
+      "request": {
+        "url": "Observation/argonaut-lab-20", 
+        "method": "PUT"
+      }, 
+      "resource": {
+        "status": "final", 
+        "category": {
+          "text": "Laboratory", 
+          "coding": [
+            {
+              "code": "laboratory", 
+              "system": "http://hl7.org/fhir/observation-category", 
+              "display": "Laboratory"
+            }
+          ]
+        }, 
+        "code": {
+          "text": "Erythrocyte mean corpuscular hemoglobin", 
+          "coding": [
+            {
+              "code": "785-6", 
+              "system": "http://loinc.org", 
+              "display": "Erythrocyte mean corpuscular hemoglobin"
+            }
+          ]
+        }, 
+        "effectiveDateTime": "2005-07-04", 
+        "resourceType": "Observation", 
+        "text": {
+          "status": "generated", 
+          "div": "<div>See structured data</div>"
+        }, 
+        "valueQuantity": {
+          "unit": "pg", 
+          "value": 29, 
+          "system": "http://unitsofmeasure.org"
+        }, 
+        "id": "argonaut-lab-20", 
+        "subject": {
+          "reference": "Patient/1032702"
+        }
+      }
+    }, 
+    {
+      "request": {
+        "url": "Observation/argonaut-lab-21", 
+        "method": "PUT"
+      }, 
+      "resource": {
+        "status": "final", 
+        "category": {
+          "text": "Laboratory", 
+          "coding": [
+            {
+              "code": "laboratory", 
+              "system": "http://hl7.org/fhir/observation-category", 
+              "display": "Laboratory"
+            }
+          ]
+        }, 
+        "code": {
+          "text": "Erythrocyte mean corpuscular hemoglobin concentration", 
+          "coding": [
+            {
+              "code": "786-4", 
+              "system": "http://loinc.org", 
+              "display": "Erythrocyte mean corpuscular hemoglobin concentration"
+            }
+          ]
+        }, 
+        "effectiveDateTime": "2005-07-04", 
+        "resourceType": "Observation", 
+        "text": {
+          "status": "generated", 
+          "div": "<div>See structured data</div>"
+        }, 
+        "valueQuantity": {
+          "unit": "g/dL", 
+          "value": 34.2, 
+          "system": "http://unitsofmeasure.org"
+        }, 
+        "id": "argonaut-lab-21", 
+        "subject": {
+          "reference": "Patient/1032702"
+        }
+      }
+    }, 
+    {
+      "request": {
+        "url": "Observation/argonaut-lab-22", 
+        "method": "PUT"
+      }, 
+      "resource": {
+        "status": "final", 
+        "category": {
+          "text": "Laboratory", 
+          "coding": [
+            {
+              "code": "laboratory", 
+              "system": "http://hl7.org/fhir/observation-category", 
+              "display": "Laboratory"
+            }
+          ]
+        }, 
+        "code": {
+          "text": "Erythrocyte distribution width [Ratio]", 
+          "coding": [
+            {
+              "code": "788-0", 
+              "system": "http://loinc.org", 
+              "display": "Erythrocyte distribution width [Ratio]"
+            }
+          ]
+        }, 
+        "effectiveDateTime": "2005-07-04", 
+        "resourceType": "Observation", 
+        "text": {
+          "status": "generated", 
+          "div": "<div>See structured data</div>"
+        }, 
+        "valueQuantity": {
+          "unit": "%", 
+          "value": 11.8, 
+          "system": "http://unitsofmeasure.org"
+        }, 
+        "id": "argonaut-lab-22", 
+        "subject": {
+          "reference": "Patient/1032702"
+        }
+      }
+    }, 
+    {
+      "request": {
+        "url": "Observation/argonaut-lab-23", 
+        "method": "PUT"
+      }, 
+      "resource": {
+        "status": "final", 
+        "category": {
+          "text": "Laboratory", 
+          "coding": [
+            {
+              "code": "laboratory", 
+              "system": "http://hl7.org/fhir/observation-category", 
+              "display": "Laboratory"
+            }
+          ]
+        }, 
+        "code": {
+          "text": "Platelets", 
+          "coding": [
+            {
+              "code": "777-3", 
+              "system": "http://loinc.org", 
+              "display": "Platelets"
+            }
+          ]
+        }, 
+        "effectiveDateTime": "2005-07-04", 
+        "resourceType": "Observation", 
+        "text": {
+          "status": "generated", 
+          "div": "<div>See structured data</div>"
+        }, 
+        "valueQuantity": {
+          "unit": "10*3/uL", 
+          "value": 370, 
+          "system": "http://unitsofmeasure.org"
+        }, 
+        "id": "argonaut-lab-23", 
+        "subject": {
+          "reference": "Patient/1032702"
+        }
+      }
+    }, 
+    {
+      "request": {
+        "url": "Observation/argonaut-lab-24", 
+        "method": "PUT"
+      }, 
+      "resource": {
+        "status": "final", 
+        "category": {
+          "text": "Laboratory", 
+          "coding": [
+            {
+              "code": "laboratory", 
+              "system": "http://hl7.org/fhir/observation-category", 
+              "display": "Laboratory"
+            }
+          ]
+        }, 
+        "code": {
+          "text": "Platelet mean volume", 
+          "coding": [
+            {
+              "code": "32623-1", 
+              "system": "http://loinc.org", 
+              "display": "Platelet mean volume"
+            }
+          ]
+        }, 
+        "effectiveDateTime": "2005-07-04", 
+        "resourceType": "Observation", 
+        "text": {
+          "status": "generated", 
+          "div": "<div>See structured data</div>"
+        }, 
+        "valueQuantity": {
+          "unit": "fL", 
+          "value": 9.1, 
+          "system": "http://unitsofmeasure.org"
+        }, 
+        "id": "argonaut-lab-24", 
+        "subject": {
+          "reference": "Patient/1032702"
+        }
+      }
+    }
+  ], 
+  "type": "transaction"
+}

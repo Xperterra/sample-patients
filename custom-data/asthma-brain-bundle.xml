@@ -1,0 +1,1421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="Asthma patient example"/>
+    <type value="transaction"/>
+    <entry>
+        <resource>
+            <Organization>
+                <id value="HB-325359"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2016-02-22T00:04:51.000+00:00"/>
+
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">Health Level Seven International
+
+                        <br/>
+                        3300 Washtenaw Avenue, Suite 227
+
+                        <br/>
+                        Ann Arbor, MI 48104
+
+                        <br/>
+                        USA
+
+                        <br/>
+                        (+1) 734-677-7777 (phone)
+
+                        <br/>
+                        (+1) 734-677-6622 (fax)
+
+                        <br/>
+                        E-mail:
+
+                        <a href="mailto:hq@HL7.org">hq@HL7.org</a>
+
+                    </div>
+
+                </text>
+                <extension url="http://hl7.org/fhir/StructureDefinition/organization-alias">
+                    <valueString value="HL7 International"/>
+
+                </extension>
+                <name value="Health Level Seven International"/>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="(+1) 734-677-7777"/>
+
+                </telecom>
+                <telecom>
+                    <system value="fax"/>
+                    <value value="(+1) 734-677-6622"/>
+
+                </telecom>
+                <telecom>
+                    <system value="email"/>
+                    <value value="hq@HL7.org"/>
+
+                </telecom>
+                <address>
+                    <line value="3300 Washtenaw Avenue, Suite 227"/>
+                    <city value="Ann Arbor"/>
+                    <state value="MI"/>
+                    <postalCode value="48104"/>
+                    <country value="USA"/>
+
+                </address>
+            </Organization>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Organization/HB-325359"/>
+        </request>
+    </entry>
+    <entry>
+        <resource>
+            <Patient>
+                <id value="HB-325358"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2016-02-22T00:05:18.000+00:00"/>
+
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <div>
+                            <p>Smith,Timmothy (Male 13y)</p>
+
+                        </div>
+
+                    </div>
+
+                </text>
+                <identifier>
+                    <use value="usual"/>
+                    <type>
+                        <coding>
+                            <system value="http://hl7.org/fhir/v2/0203"/>
+                            <code value="MR"/>
+                            <display value="Medical record number"/>
+
+                        </coding>
+                        <text value="Medical record number"/>
+
+                    </type>
+                    <system value="http://hospital.smarthealthit.org"/>
+                    <value value="1032702"/>
+
+                </identifier>
+                <active value="true"/>
+                <name>
+                    <use value="official"/>
+                    <family value="Smith"/>
+                    <given value="Timothy"/>
+
+                </name>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="800-555-5555"/>
+                    <use value="mobile"/>
+
+                </telecom>
+                <telecom>
+                    <system value="email"/>
+                    <value value="tsmith@mhealthbrain.com"/>
+
+                </telecom>
+                <gender value="male"/>
+                <birthDate value="2004-02-29"/>
+                <deceasedBoolean value="false"/>
+                <address>
+                    <use value="home"/>
+                    <line value="1823 Iron Ridge Dr"/>
+                    <city value="Las Vegas"/>
+                    <state value="NV"/>
+                    <postalCode value="89117"/>
+                    <country value="USA"/>
+
+                </address>
+                <careProvider>
+                    <reference value="Organization/HB-325359"/>
+
+                </careProvider>
+                <managingOrganization>
+                    <reference value="Organization/HB-325359"/>
+
+                </managingOrganization>
+            </Patient>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Patient/HB-325358"/>
+        </request>
+    </entry>
+    <entry>
+        <resource>
+            <Observation>
+                <id value="HB-325375"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2016-02-22T00:10:12.000+00:00"/>
+
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <div>
+                            <p>2013-02-21T12:04:24+11:00 : Systolic 120 mmHg</p>
+
+                        </div>
+
+                    </div>
+
+                </text>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="8459-0"/>
+                        <display value="Systolic"/>
+
+                    </coding>
+
+                </code>
+                <subject>
+                    <reference value="Patient/HB-325358"/>
+
+                </subject>
+                <effectiveDateTime value="2013-02-21T12:04:24+11:00"/>
+                <valueQuantity>
+                    <value value="120"/>
+                    <unit value="mmHg"/>
+
+                </valueQuantity>
+
+            </Observation>
+
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Observation/HB-325375"/>
+        </request>
+
+    </entry>
+    <entry>
+        <resource>
+            <Observation>
+                <id value="HB-325377"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2016-02-22T00:10:40.000+00:00"/>
+
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <div>
+                            <p>2013-02-21T12:04:35+11:00 : Waist circumference 81 cm</p>
+
+                        </div>
+
+                    </div>
+
+                </text>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="8280-0"/>
+                        <display value="Waist circumference"/>
+
+                    </coding>
+
+                </code>
+                <subject>
+                    <reference value="Patient/HB-325358"/>
+
+                </subject>
+                <effectiveDateTime value="2013-02-21T12:04:35+11:00"/>
+                <valueQuantity>
+                    <value value="81"/>
+                    <unit value="cm"/>
+
+                </valueQuantity>
+
+            </Observation>
+
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Observation/HB-325377"/>
+        </request>
+
+    </entry>
+    <entry>
+        <resource>
+            <Observation>
+                <id value="HB-325381"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2016-02-22T00:11:12.000+00:00"/>
+
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <div>
+                            <p>2012-12-10T08:05:00+11:00 : BSL (random) 6.1 mmol/L</p>
+
+                        </div>
+
+                    </div>
+
+                </text>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="14749-6"/>
+                        <display value="BSL (random)"/>
+
+                    </coding>
+
+                </code>
+                <subject>
+                    <reference value="Patient/HB-325358"/>
+
+                </subject>
+                <effectiveDateTime value="2012-12-10T08:05:00+11:00"/>
+                <valueQuantity>
+                    <value value="6.1"/>
+                    <unit value="mmol/L"/>
+
+                </valueQuantity>
+
+            </Observation>
+
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Observation/HB-325381"/>
+        </request>
+
+    </entry>
+    <entry>
+        <resource>
+            <Observation>
+                <id value="HB-325383"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2016-02-22T00:11:36.000+00:00"/>
+
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <div>
+                            <p>2012-12-10T08:05:00+11:00 : Triglycerides 0.9 mmol/L</p>
+
+                        </div>
+
+                    </div>
+
+                </text>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="14927-8"/>
+                        <display value="Triglycerides"/>
+
+                    </coding>
+
+                </code>
+                <subject>
+                    <reference value="Patient/HB-325358"/>
+
+                </subject>
+                <effectiveDateTime value="2012-12-10T08:05:00+11:00"/>
+                <valueQuantity>
+                    <value value="0.9"/>
+                    <unit value="mmol/L"/>
+
+                </valueQuantity>
+
+            </Observation>
+
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Observation/HB-325383"/>
+        </request>
+
+    </entry>
+    <entry>
+        <resource>
+            <Observation>
+                <id value="HB-325373"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2016-02-22T00:09:37.000+00:00"/>
+
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <div>
+                            <p>History of allergies: No known allergies</p>
+
+                        </div>
+
+                    </div>
+
+                </text>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="8658-7"/>
+                        <display value="History of allergies"/>
+
+                    </coding>
+
+                </code>
+                <subject>
+                    <reference value="Patient/HB-325358"/>
+
+                </subject>
+                <effectiveDateTime value="2013-04-10T12:20:52+10:00"/>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="160244002"/>
+                        <display value="No known allergies"/>
+
+                    </coding>
+
+                </valueCodeableConcept>
+
+            </Observation>
+
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Observation/HB-325373"/>
+        </request>
+
+    </entry>
+    <entry>
+        <resource>
+            <Observation>
+                <id value="HB-325374"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2016-02-22T00:09:57.000+00:00"/>
+
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <div>
+                            <p>2013-02-21T12:04:24+11:00 : Diastolic 80 mmHg</p>
+
+                        </div>
+
+                    </div>
+
+                </text>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="8453-3"/>
+                        <display value="Diastolic"/>
+
+                    </coding>
+
+                </code>
+                <subject>
+                    <reference value="Patient/HB-325358"/>
+
+                </subject>
+                <effectiveDateTime value="2013-02-21T12:04:24+11:00"/>
+                <valueQuantity>
+                    <value value="80"/>
+                    <unit value="mmHg"/>
+
+                </valueQuantity>
+
+            </Observation>
+
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Observation/HB-325374"/>
+        </request>
+
+    </entry>
+    <entry>
+        <resource>
+            <Observation>
+                <id value="HB-325376"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2016-02-22T00:10:25.000+00:00"/>
+
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <div>
+                            <p>2013-02-21T12:04:35+11:00 : Body Mass Index 20.1 kg/m^2</p>
+
+                        </div>
+
+                    </div>
+
+                </text>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="59574-4"/>
+                        <display value="Body Mass Index"/>
+
+                    </coding>
+
+                </code>
+                <subject>
+                    <reference value="Patient/HB-325358"/>
+
+                </subject>
+                <effectiveDateTime value="2013-02-21T12:04:35+11:00"/>
+                <valueQuantity>
+                    <value value="20.1"/>
+                    <unit value="kg/m^2"/>
+
+                </valueQuantity>
+
+            </Observation>
+
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Observation/HB-325376"/>
+        </request>
+
+    </entry>
+    <entry>
+        <resource>
+            <Observation>
+                <id value="HB-325380"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2016-02-22T00:10:56.000+00:00"/>
+
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <div>
+                            <p>2012-12-10T08:05:00+11:00 : Total Cholesterol 5 mmol/L</p>
+
+                        </div>
+
+                    </div>
+
+                </text>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="14647-2"/>
+                        <display value="Total Cholesterol"/>
+
+                    </coding>
+
+                </code>
+                <subject>
+                    <reference value="Patient/HB-325358"/>
+
+                </subject>
+                <effectiveDateTime value="2012-12-10T08:05:00+11:00"/>
+                <valueQuantity>
+                    <value value="5"/>
+                    <unit value="mmol/L"/>
+
+                </valueQuantity>
+
+            </Observation>
+
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Observation/HB-325380"/>
+        </request>
+
+    </entry>
+    <entry>
+        <resource>
+            <Observation>
+                <id value="HB-325382"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2016-02-22T00:11:25.000+00:00"/>
+
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <div>
+                            <p>2012-12-10T08:05:00+11:00 : Creatinine 64 umol/L</p>
+
+                        </div>
+
+                    </div>
+
+                </text>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="14682-9"/>
+                        <display value="Creatinine"/>
+
+                    </coding>
+
+                </code>
+                <subject>
+                    <reference value="Patient/HB-325358"/>
+
+                </subject>
+                <effectiveDateTime value="2012-12-10T08:05:00+11:00"/>
+                <valueQuantity>
+                    <value value="64"/>
+                    <unit value="umol/L"/>
+
+                </valueQuantity>
+
+            </Observation>
+
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Observation/HB-325382"/>
+        </request>
+
+    </entry>
+
+    <entry>
+        <resource>
+            <Condition>
+                <id value="HB-325360"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2016-02-22T00:05:45.000+00:00"/>
+                    <security>
+                        <system value="http://hl7.org/fhir/v3/Confidentiality"/>
+                        <code value="N"/>
+                        <display value="normal"/>
+
+                    </security>
+
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <div>
+                            <p>1996-02-10 Asthma (inactive)</p>
+
+                        </div>
+
+                    </div>
+
+                </text>
+                <patient>
+                    <reference value="Patient/HB-325358"/>
+
+                </patient>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="405944004"/>
+                        <display value="Asthma"/>
+
+                    </coding>
+                    <text value="Asthma"/>
+
+                </code>
+                <category>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="439401001"/>
+                        <display value="Diagnosis"/>
+
+                    </coding>
+
+                </category>
+                <clinicalStatus value="resolved"/>
+                <verificationStatus value="confirmed"/>
+                <onsetDateTime value="2013-02-10"/>
+                <abatementBoolean value="true"/>
+            </Condition>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Condition/HB-325360"/>
+        </request>
+
+    </entry>
+    <entry>
+        <resource>
+            <Encounter>
+                <id value="HB-325571"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2016-02-22T00:06:35.000+00:00"/>
+
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <div>
+                            <p>2000-02-04 11:43 to 12:13 : General Practitioner</p>
+
+                        </div>
+
+                    </div>
+
+                </text>
+                <status value="finished"/>
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="62247001"/>
+                        <display value="General Practitioner"/>
+
+                    </coding>
+
+                </type>
+                <patient>
+                    <reference value="Patient/HB-325358"/>
+
+                </patient>
+                <period>
+                    <start value="2000-02-04T11:43:38+11:00"/>
+                    <end value="2000-02-04T12:13:00+11:00"/>
+
+                </period>
+
+            </Encounter>
+
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Encounter/HB-325571"/>
+        </request>
+
+    </entry>
+    <entry>
+        <resource>
+            <Encounter>
+                <id value="HB-325573"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2016-02-22T00:07:03.000+00:00"/>
+
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <div>
+                            <p>2004-02-23 22:51 to 23:25 : General Practitioner</p>
+
+                        </div>
+
+                    </div>
+
+                </text>
+                <status value="finished"/>
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="62247001"/>
+                        <display value="General Practitioner"/>
+
+                    </coding>
+
+                </type>
+                <patient>
+                    <reference value="Patient/HB-325358"/>
+
+                </patient>
+                <period>
+                    <start value="2004-02-23T22:51:03+11:00"/>
+                    <end value="2004-02-23T23:25:35+11:00"/>
+
+                </period>
+
+            </Encounter>
+
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Encounter/HB-325573"/>
+        </request>
+
+    </entry>
+    <entry>
+        <resource>
+            <Encounter>
+                <id value="HB-325577"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2016-02-22T00:07:59.000+00:00"/>
+
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <div>
+                            <p>2011-05-10 15:56 to 16:20 : General Practitioner - Immunisation - Influenza</p>
+
+                        </div>
+
+                    </div>
+
+                </text>
+                <status value="finished"/>
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="62247001"/>
+                        <display value="General Practitioner"/>
+
+                    </coding>
+
+                </type>
+                <patient>
+                    <reference value="Patient/HB-325358"/>
+
+                </patient>
+                <period>
+                    <start value="2011-05-10T15:56:17+10:00"/>
+                    <end value="2011-05-10T16:20:58+10:00"/>
+
+                </period>
+                <reason>
+                    <coding>
+                        <system value="http://oridashi.com.au/system/code/medicaldirectorterm"/>
+                        <code value="immu@influenz"/>
+                        <display value="Immunisation - Influenza"/>
+
+                    </coding>
+                    <text value="Immunisation - Influenza"/>
+
+                </reason>
+
+            </Encounter>
+
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Encounter/HB-325577"/>
+        </request>
+
+    </entry>
+    <entry>
+        <resource>
+            <Encounter>
+                <id value="HB-325575"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2016-02-22T00:07:32.000+00:00"/>
+
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <div>
+                            <p>2009-03-06 15:58 to 16:20 : General Practitioner - URTI</p>
+
+                        </div>
+
+                    </div>
+
+                </text>
+                <status value="finished"/>
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="62247001"/>
+                        <display value="General Practitioner"/>
+
+                    </coding>
+
+                </type>
+                <patient>
+                    <reference value="Patient/HB-325358"/>
+
+                </patient>
+                <period>
+                    <start value="2009-03-06T15:58:40+11:00"/>
+                    <end value="2009-03-06T16:20:47+11:00"/>
+
+                </period>
+                <reason>
+                    <text value="URTI"/>
+
+                </reason>
+
+            </Encounter>
+
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Encounter/HB-325575"/>
+        </request>
+
+    </entry>
+    <entry>
+        <resource>
+            <Encounter>
+                <id value="HB-325570"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2016-02-22T00:06:13.000+00:00"/>
+
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <div>
+                            <p>2013-02-21 12:00 to 12:23 : General Practitioner - Check up</p>
+
+                        </div>
+
+                    </div>
+
+                </text>
+                <status value="finished"/>
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="62247001"/>
+                        <display value="General Practitioner"/>
+
+                    </coding>
+
+                </type>
+                <patient>
+                    <reference value="Patient/HB-325358"/>
+
+                </patient>
+                <period>
+                    <start value="2013-02-21T12:00:41+11:00"/>
+                    <end value="2013-02-21T12:23:41+11:00"/>
+
+                </period>
+                <reason>
+                    <coding>
+                        <system value="http://oridashi.com.au/system/code/medicaldirectorterm"/>
+                        <code value="asse@general"/>
+                        <display value="Check up"/>
+
+                    </coding>
+                    <text value="Check up"/>
+
+                </reason>
+
+            </Encounter>
+
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Encounter/HB-325570"/>
+        </request>
+
+    </entry>
+    <entry>
+        <resource>
+            <Encounter>
+                <id value="HB-325572"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2016-02-22T00:06:48.000+00:00"/>
+
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <div>
+                            <p>2000-02-04 17:32 to 18:05 : General Practitioner</p>
+
+                        </div>
+
+                    </div>
+
+                </text>
+                <status value="finished"/>
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="62247001"/>
+                        <display value="General Practitioner"/>
+
+                    </coding>
+
+                </type>
+                <patient>
+                    <reference value="Patient/HB-325358"/>
+
+                </patient>
+                <period>
+                    <start value="2000-02-04T17:32:58+11:00"/>
+                    <end value="2000-02-04T18:05:03+11:00"/>
+
+                </period>
+
+            </Encounter>
+
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Encounter/HB-325572"/>
+        </request>
+
+    </entry>
+    <entry>
+        <resource>
+            <Encounter>
+                <id value="HB-325578"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2016-02-22T00:08:13.000+00:00"/>
+
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <div>
+                            <p>2013-02-18 15:32 to 15:54 : General Practitioner - Check up</p>
+
+                        </div>
+
+                    </div>
+
+                </text>
+                <status value="finished"/>
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="62247001"/>
+                        <display value="General Practitioner"/>
+
+                    </coding>
+
+                </type>
+                <patient>
+                    <reference value="Patient/HB-325358"/>
+
+                </patient>
+                <period>
+                    <start value="2013-02-18T15:32:28+11:00"/>
+                    <end value="2013-02-18T15:54:43+11:00"/>
+
+                </period>
+                <reason>
+                    <coding>
+                        <system value="http://oridashi.com.au/system/code/medicaldirectorterm"/>
+                        <code value="asse@general"/>
+                        <display value="Check up"/>
+
+                    </coding>
+                    <text value="Check up"/>
+
+                </reason>
+
+            </Encounter>
+
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Encounter/HB-325578"/>
+        </request>
+
+    </entry>
+    <entry>
+        <resource>
+            <Encounter>
+                <id value="HB-325574"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2016-02-22T00:07:18.000+00:00"/>
+
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <div>
+                            <p>2008-05-23 16:00 to 16:31 : General Practitioner - URTI</p>
+
+                        </div>
+
+                    </div>
+
+                </text>
+                <status value="finished"/>
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="62247001"/>
+                        <display value="General Practitioner"/>
+
+                    </coding>
+
+                </type>
+                <patient>
+                    <reference value="Patient/HB-325358"/>
+
+                </patient>
+                <period>
+                    <start value="2008-05-23T16:00:26+10:00"/>
+                    <end value="2008-05-23T16:31:50+10:00"/>
+
+                </period>
+                <reason>
+                    <text value="URTI"/>
+
+                </reason>
+
+            </Encounter>
+
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Encounter/HB-325574"/>
+        </request>
+
+    </entry>
+    <entry>
+        <resource>
+            <Encounter>
+                <id value="HB-325576"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2016-02-22T00:07:45.000+00:00"/>
+
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <div>
+                            <p>2010-04-27 15:57 to 16:28 : General Practitioner - Immunisation - Influenza</p>
+
+                        </div>
+
+                    </div>
+
+                </text>
+                <status value="finished"/>
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="62247001"/>
+                        <display value="General Practitioner"/>
+
+                    </coding>
+
+                </type>
+                <patient>
+                    <reference value="Patient/HB-325358"/>
+
+                </patient>
+                <period>
+                    <start value="2010-04-27T15:57:29+10:00"/>
+                    <end value="2010-04-27T16:28:42+10:00"/>
+
+                </period>
+                <reason>
+                    <coding>
+                        <system value="http://oridashi.com.au/system/code/medicaldirectorterm"/>
+                        <code value="immu@influenz"/>
+                        <display value="Immunisation - Influenza"/>
+
+                    </coding>
+                    <text value="Immunisation - Influenza"/>
+
+                </reason>
+
+            </Encounter>
+
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Encounter/HB-325576"/>
+        </request>
+
+    </entry>
+
+    <entry>
+        <resource>
+            <Medication>
+                <id value="HB-medexample004"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2016-02-22T00:15:06.000+00:00"/>
+
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">200 ACTUAT Albuterol 0.09 MG/ACTUAT Metered Dose Inhaler
+                        [ProAir HFA] (rxnorm: 745752)
+                    </div>
+
+                </text>
+                <code>
+                    <coding>
+                        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+                        <code value="745752"/>
+                        <display value="200 ACTUAT Albuterol 0.09 MG/ACTUAT Metered Dose Inhaler [ProAir HFA]"/>
+
+                    </coding>
+
+                </code>
+                <isBrand value="true"/>
+                <product>
+                    <form>
+                        <coding>
+                            <system value="http://snomed.info/sct"/>
+                            <code value="48474002"/>
+                            <display value="Albuterol sulfate (substance)"/>
+
+                        </coding>
+
+                    </form>
+                    <ingredient>
+                        <item>
+                            <display value="Albuterol"/>
+
+                        </item>
+                        <amount>
+                            <numerator>
+                                <value value="2"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="{puff}"/>
+
+                            </numerator>
+                            <denominator>
+                                <value value="5"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="mL"/>
+
+                            </denominator>
+
+                        </amount>
+
+                    </ingredient>
+                    <batch>
+                        <lotNumber value="12345"/>
+                        <expirationDate value="2018-12-22"/>
+
+                    </batch>
+
+                </product>
+            </Medication>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Medication/HB-medexample004"/>
+        </request>
+
+    </entry>
+
+    <entry>
+        <resource>
+            <MedicationOrder>
+                <id value="HB-medrx004"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2016-02-22T00:17:44.000+00:00"/>
+
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Generated Narrative with Details</b>
+
+                        </p>
+                        <p>
+                            <b>id</b>: medrx004
+
+                        </p>
+                        <p>
+                            <b>identifier</b>: 12345 (OFFICIAL)
+
+                        </p>
+                        <p>
+                            <b>dateWritten</b>: 15/01/2015
+
+                        </p>
+                        <p>
+                            <b>status</b>: active
+
+                        </p>
+                        <p>
+                            <b>patient</b>:
+
+                            <a>Timothy Smith</a>
+
+                        </p>
+                        <p>
+                            <b>prescriber</b>:
+
+                            <a>Patrick Pump</a>
+
+                        </p>
+                        <p>
+                            <b>encounter</b>:
+
+                            <a>encounter who leads to this prescription</a>
+
+                        </p>
+                        <p>
+                            <b>reason</b>: Asthma
+
+                            <span>(Details : {SNOMED CT code '195967001' = '195967001', given as 'Asthma'})</span>
+
+                        </p>
+                        <p>
+                            <b>medication</b>:
+
+                            <a>prescribed medication</a>
+
+                        </p>
+                        <h3>DosageInstructions</h3>
+                        <table>
+                            <tr>
+                                <td>-</td>
+                                <td>
+                                    <b>Text</b>
+
+                                </td>
+                                <td>
+                                    <b>Timing</b>
+
+                                </td>
+                                <td>
+                                    <b>AsNeeded[x]</b>
+
+                                </td>
+                                <td>
+                                    <b>Route</b>
+
+                                </td>
+                                <td>
+                                    <b>Dose[x]</b>
+
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>*</td>
+                                <td>Use 2 puffs twice daily as needed</td>
+                                <td>Duration 3days, Do 2 per 1 days</td>
+                                <td>true</td>
+                                <td>Inhalation
+
+                                    <span>(Details : {SNOMED CT code '422237004' = '422237004', given as 'Inhalation'})
+                                    </span>
+
+                                </td>
+                                <td>2 415215001
+
+                                    <span>(Details: SNOMED CT code 415215001 = '415215001')</span>
+
+                                </td>
+
+                            </tr>
+
+                        </table>
+
+                    </div>
+
+                </text>
+                <identifier>
+                    <use value="official"/>
+                    <system value="http://www.bmc.nl/portal/prescriptions"/>
+                    <value value="12345"/>
+
+                </identifier>
+                <dateWritten value="2015-11-01"/>
+                <status value="active"/>
+                <patient>
+                    <reference value="Patient/HB-325358"/>
+                    <display value="Timothy Smith"/>
+
+                </patient>
+                <encounter>
+                    <reference value="Encounter/HB-325570"/>
+                    <display value="encounter who leads to this prescription"/>
+
+                </encounter>
+                <reasonCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="195967001"/>
+                        <display value="Asthma"/>
+
+                    </coding>
+
+                </reasonCodeableConcept>
+                <medicationReference>
+                    <reference value="Medication/HB-medexample004"/>
+                    <display value="prescribed medication"/>
+
+                </medicationReference>
+                <dosageInstruction>
+                    <text value="Use 2 puffs twice daily as needed"/>
+                    <timing>
+                        <repeat>
+                            <duration value="3"/>
+                            <durationUnits value="d"/>
+                            <frequency value="2"/>
+                            <period value="1"/>
+                            <periodUnits value="d"/>
+
+                        </repeat>
+
+                    </timing>
+                    <asNeededBoolean value="true"/>
+                    <route>
+                        <coding>
+                            <system value="http://snomed.info/sct"/>
+                            <code value="422237004"/>
+                            <display value="Inhalation"/>
+
+                        </coding>
+
+                    </route>
+                    <doseQuantity>
+                        <value value="2"/>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="415215001"/>
+
+                    </doseQuantity>
+
+                </dosageInstruction>
+            </MedicationOrder>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="MedicationOrder/HB-medrx004"/>
+        </request>
+
+    </entry>
+
+</Bundle>

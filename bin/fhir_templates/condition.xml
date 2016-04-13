@@ -17,7 +17,8 @@
       </coding>
       <text value="{{c.name}}"/>
     </code>
-   <clinicalStatus value="confirmed"/>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
    <onsetDateTime value="{{c.start}}"/>
    {% if c.end %}
    <abatementDate value="{{c.end}}"/>

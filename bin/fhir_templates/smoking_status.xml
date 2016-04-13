@@ -6,6 +6,14 @@
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">Tobacco smoking status: {{t.smokingStatusText}}</div>
     </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="social-history"/>
+          <display value="Social History"/>
+      </coding>
+      <text value="Social History"/>
+    </category>
     <code>
       <coding>
         <system value="http://loinc.org"/>
